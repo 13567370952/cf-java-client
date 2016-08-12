@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/uaa/clients/CreateClientRequest.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/clients/CreateClient.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/uaa/clients/Clients.html" target="_top">Frames</a></li>
@@ -121,54 +121,60 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/BatchCreateClientsResponse.html" title="class in org.cloudfoundry.uaa.clients">BatchCreateClientsResponse</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#batchCreate-org.cloudfoundry.uaa.clients.BatchCreateClientsRequest-">batchCreate</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/BatchCreateClientsRequest.html" title="class in org.cloudfoundry.uaa.clients">BatchCreateClientsRequest</a>&nbsp;request)</code>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#batch-create">Batch Create Client</a> request</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/BatchDeleteClientsResponse.html" title="class in org.cloudfoundry.uaa.clients">BatchDeleteClientsResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#batchDelete-org.cloudfoundry.uaa.clients.BatchDeleteClientsRequest-">batchDelete</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/BatchDeleteClientsRequest.html" title="class in org.cloudfoundry.uaa.clients">BatchDeleteClientsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#batch-delete">Batch Delete Clients</a> request</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/CreateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">CreateClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#create-org.cloudfoundry.uaa.clients.CreateClientRequest-">create</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/CreateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">CreateClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#create76">Create Client</a> request</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientResponse.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#delete-org.cloudfoundry.uaa.clients.DeleteClientRequest-">delete</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/DeleteClientRequest.html" title="class in org.cloudfoundry.uaa.clients">DeleteClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#delete79">Delete Client</a> request</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetClientResponse.html" title="class in org.cloudfoundry.uaa.clients">GetClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#get-org.cloudfoundry.uaa.clients.GetClientRequest-">get</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/GetClientRequest.html" title="class in org.cloudfoundry.uaa.clients">GetClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve77">Retrieve Client</a> request</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#getMetadata-org.cloudfoundry.uaa.clients.GetMetadataRequest-">getMetadata</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/GetMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">GetMetadataRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#retrieve88">Retrieve Metadata</a> request</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/ListClientsResponse.html" title="class in org.cloudfoundry.uaa.clients">ListClientsResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#list-org.cloudfoundry.uaa.clients.ListClientsRequest-">list</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/ListClientsRequest.html" title="class in org.cloudfoundry.uaa.clients">ListClientsRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list81">List Clients</a> request</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/ListMetadatasResponse.html" title="class in org.cloudfoundry.uaa.clients">ListMetadatasResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#listMetadatas-org.cloudfoundry.uaa.clients.ListMetadatasRequest-">listMetadatas</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/ListMetadatasRequest.html" title="class in org.cloudfoundry.uaa.clients">ListMetadatasRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#list89">List Metadatas</a> request</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#update-org.cloudfoundry.uaa.clients.UpdateClientRequest-">update</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateClientRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateClientRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update78">Update Client</a> request</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataResponse.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataResponse</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/cloudfoundry/uaa/clients/Clients.html#updateMetadata-org.cloudfoundry.uaa.clients.UpdateMetadataRequest-">updateMetadata</a></span>(<a href="../../../../org/cloudfoundry/uaa/clients/UpdateMetadataRequest.html" title="class in org.cloudfoundry.uaa.clients">UpdateMetadataRequest</a>&nbsp;request)</code>
 <div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#update90">Update Metadata</a> request</div>
@@ -189,6 +195,22 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="batchCreate-org.cloudfoundry.uaa.clients.BatchCreateClientsRequest-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>batchCreate</h4>
+<pre><a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;<a href="../../../../org/cloudfoundry/uaa/clients/BatchCreateClientsResponse.html" title="class in org.cloudfoundry.uaa.clients">BatchCreateClientsResponse</a>&gt;&nbsp;batchCreate(<a href="../../../../org/cloudfoundry/uaa/clients/BatchCreateClientsRequest.html" title="class in org.cloudfoundry.uaa.clients">BatchCreateClientsRequest</a>&nbsp;request)</pre>
+<div class="block">Makes the <a href="http://docs.cloudfoundry.com/uaa/#batch-create">Batch Create Client</a> request</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - Batch Create Client request</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the Response to the Batch Create Client Request</dd>
+</dl>
+</li>
+</ul>
 <a name="batchDelete-org.cloudfoundry.uaa.clients.BatchDeleteClientsRequest-">
 <!--   -->
 </a>
@@ -362,7 +384,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../org/cloudfoundry/uaa/clients/Client.Builder.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/cloudfoundry/uaa/clients/CreateClientRequest.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/cloudfoundry/uaa/clients/CreateClient.html" title="class in org.cloudfoundry.uaa.clients"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/cloudfoundry/uaa/clients/Clients.html" target="_top">Frames</a></li>
