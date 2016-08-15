@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -189,24 +189,36 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#getDiskBytesQuota--">getDiskBytesQuota</a></span>()</code>
+<div class="block">The maximum bytes of disk allocated to container</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#getInstanceIndex--">getInstanceIndex</a></span>()</code>
 <div class="block">The instance index of the contained application.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#getMemoryBytes--">getMemoryBytes</a></span>()</code>
 <div class="block">The bytes of memory used</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#hashCode--">hashCode</a></span>()</code>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>cpuPercentage</code>, <code>diskBytes</code>, <code>instanceIndex</code>, <code>memoryBytes</code>.</div>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#getMemoryBytesQuota--">getMemoryBytesQuota</a></span>()</code>
+<div class="block">The maximum bytes of memory allocated to container</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#hashCode--">hashCode</a></span>()</code>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>cpuPercentage</code>, <code>diskBytes</code>, <code>diskBytesQuota</code>, <code>instanceIndex</code>, <code>memoryBytes</code>, <code>memoryBytesQuota</code>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.html#toString--">toString</a></span>()</code>
 <div class="block">Prints the immutable value <code>ContainerMetric</code> with attribute values.</div>
@@ -264,6 +276,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The bytes of disk used</div>
 </li>
 </ul>
+<a name="getDiskBytesQuota--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDiskBytesQuota</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getDiskBytesQuota()</pre>
+<div class="block">The maximum bytes of disk allocated to container</div>
+</li>
+</ul>
 <a name="getInstanceIndex--">
 <!--   -->
 </a>
@@ -282,6 +304,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>getMemoryBytes</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getMemoryBytes()</pre>
 <div class="block">The bytes of memory used</div>
+</li>
+</ul>
+<a name="getMemoryBytesQuota--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMemoryBytesQuota</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;getMemoryBytesQuota()</pre>
+<div class="block">The maximum bytes of memory allocated to container</div>
 </li>
 </ul>
 <a name="equals-java.lang.Object-">
@@ -307,7 +339,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
-<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>cpuPercentage</code>, <code>diskBytes</code>, <code>instanceIndex</code>, <code>memoryBytes</code>.</div>
+<div class="block">Computes a hash code from attributes: <code>applicationId</code>, <code>cpuPercentage</code>, <code>diskBytes</code>, <code>diskBytesQuota</code>, <code>instanceIndex</code>, <code>memoryBytes</code>, <code>memoryBytesQuota</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>

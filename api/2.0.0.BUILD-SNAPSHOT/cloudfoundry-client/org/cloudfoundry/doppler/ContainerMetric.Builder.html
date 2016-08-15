@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,20 +163,32 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#diskBytesQuota-java.lang.Long-">diskBytesQuota</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;diskBytesQuota)</code>
+<div class="block">Initializes the value for the <code>diskBytesQuota</code> attribute.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#from-org.cloudfoundry.doppler.ContainerMetric-">from</a></span>(<a href="../../../org/cloudfoundry/doppler/ContainerMetric.html" title="class in org.cloudfoundry.doppler">ContainerMetric</a>&nbsp;instance)</code>
 <div class="block">Fill a builder with attribute values from the provided <code>ContainerMetric</code> instance.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#instanceIndex-java.lang.Integer-">instanceIndex</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;instanceIndex)</code>
 <div class="block">Initializes the value for the <code>instanceIndex</code> attribute.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#memoryBytes-java.lang.Long-">memoryBytes</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;memoryBytes)</code>
 <div class="block">Initializes the value for the <code>memoryBytes</code> attribute.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html#memoryBytesQuota-java.lang.Long-">memoryBytesQuota</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;memoryBytesQuota)</code>
+<div class="block">Initializes the value for the <code>memoryBytesQuota</code> attribute.</div>
 </td>
 </tr>
 </table>
@@ -267,6 +279,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="diskBytesQuota-java.lang.Long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>diskBytesQuota</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a>&nbsp;diskBytesQuota(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;diskBytesQuota)</pre>
+<div class="block">Initializes the value for the <code>diskBytesQuota</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>diskBytesQuota</code> - The value for diskBytesQuota (can be <code>null</code>)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
 <a name="instanceIndex-java.lang.Integer-">
 <!--   -->
 </a>
@@ -294,6 +322,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>memoryBytes</code> - The value for memoryBytes</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>this</code> builder for use in a chained invocation</dd>
+</dl>
+</li>
+</ul>
+<a name="memoryBytesQuota-java.lang.Long-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>memoryBytesQuota</h4>
+<pre>public final&nbsp;<a href="../../../org/cloudfoundry/doppler/ContainerMetric.Builder.html" title="class in org.cloudfoundry.doppler">ContainerMetric.Builder</a>&nbsp;memoryBytesQuota(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;memoryBytesQuota)</pre>
+<div class="block">Initializes the value for the <code>memoryBytesQuota</code> attribute.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>memoryBytesQuota</code> - The value for memoryBytesQuota (can be <code>null</code>)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>this</code> builder for use in a chained invocation</dd>
 </dl>
