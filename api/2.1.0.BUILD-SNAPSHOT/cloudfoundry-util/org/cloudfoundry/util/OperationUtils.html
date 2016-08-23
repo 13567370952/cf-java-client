@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -136,6 +136,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;byte[]&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/OperationUtils.html#collectByteArray-reactor.core.publisher.Flux-">collectByteArray</a></span>(<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;byte[]&gt;&nbsp;bytes)</code>
+<div class="block">Operation to collect a <code>Flux&lt;byte[]&gt;</code> into a contiguous single byte array, delivered as a single element of a <code>Mono&lt;byte[]&gt;</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T,U&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/cloudfoundry/util/OperationUtils.html#thenKeep-java.util.function.Function-">thenKeep</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;T,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;thenFunction)</code>
 <div class="block">Produces a Mono transformer that preserves the type of the source <code>Mono&lt;IN&gt;</code>.</div>
@@ -180,6 +186,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="collectByteArray-reactor.core.publisher.Flux-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>collectByteArray</h4>
+<pre>public static&nbsp;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;byte[]&gt;&nbsp;collectByteArray(<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Flux.html?is-external=true" title="class or interface in reactor.core.publisher">Flux</a>&lt;byte[]&gt;&nbsp;bytes)</pre>
+<div class="block">Operation to collect a <code>Flux&lt;byte[]&gt;</code> into a contiguous single byte array, delivered as a single element of a <code>Mono&lt;byte[]&gt;</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bytes</code> - a Flux of 0 or more byte arrays</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a Mono of a byte array</dd>
+</dl>
+</li>
+</ul>
 <a name="thenKeep-java.util.function.Function-">
 <!--   -->
 </a>
@@ -188,12 +210,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>thenKeep</h4>
 <pre>public static&nbsp;&lt;T,U&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;T&gt;&gt;&nbsp;thenKeep(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;T,<a href="http://projectreactor.io/core/docs/api/reactor/core/publisher/Mono.html?is-external=true" title="class or interface in reactor.core.publisher">Mono</a>&lt;U&gt;&gt;&nbsp;thenFunction)</pre>
 <div class="block">Produces a Mono transformer that preserves the type of the source <code>Mono&lt;IN&gt;</code>.
-
+ <p>
  <p> The Mono produced expects a single element from the source, passes this to the function (as in <code>.then</code>) and requests an element from the resulting <code>Mono&lt;OUT&gt;</code>. When successful,
  the result (if any) is discarded and the input value is signalled. </p>
-
+ <p>
  <p> <b>Summary:</b> does a <code>.then</code> on the new Mono but keeps the input to pass on unchanged. </p>
-
+ <p>
  <p> <b>Usage:</b> Can be used inline thus: <code>.as(thenKeep(in -&gt; funcOf(in)))</code> </p></div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
