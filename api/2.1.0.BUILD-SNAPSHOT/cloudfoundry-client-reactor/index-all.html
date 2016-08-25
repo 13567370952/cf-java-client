@@ -77,6 +77,12 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#AbstractUaaOperations-org.cloudfoundry.reactor.ConnectionContext-reactor.core.publisher.Mono-org.cloudfoundry.reactor.TokenProvider-">AbstractUaaOperations(ConnectionContext, Mono&lt;String&gt;, TokenProvider)</a></span> - Constructor for class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html" title="class in org.cloudfoundry.reactor.uaa">AbstractUaaOperations</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider"><span class="typeNameLink">AbstractUaaTokenProvider</span></a> - Class in <a href="org/cloudfoundry/reactor/tokenprovider/package-summary.html">org.cloudfoundry.reactor.tokenprovider</a></dt>
+<dd>
+<div class="block">An abstract base class for all token providers that interact with the UAA.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#AbstractUaaTokenProvider--">AbstractUaaTokenProvider()</a></span> - Constructor for class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">AbstractUaaTokenProvider</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html#addAllProblemHandlers-java.lang.Iterable-">addAllProblemHandlers(Iterable&lt;? extends FailingDeserializationProblemHandler&gt;)</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.Builder.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext.Builder</a></dt>
 <dd>
 <div class="block">Adds elements to <code>problemHandlers</code> list.</div>
@@ -185,21 +191,21 @@
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.Builder.html#clientId-java.lang.String-">clientId(String)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">ClientCredentialsGrantTokenProvider.Builder</a></dt>
 <dd>
-<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientId--"><code>clientId</code></a> attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html#clientId-java.lang.String-">clientId(String)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider.Builder</a></dt>
 <dd>
-<div class="block">Initializes the value for the <code>clientId</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientId--"><code>clientId</code></a> attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html#clients--">clients()</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/ReactorUaaClient.html" title="class in org.cloudfoundry.reactor.uaa">ReactorUaaClient</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.Builder.html#clientSecret-java.lang.String-">clientSecret(String)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">ClientCredentialsGrantTokenProvider.Builder</a></dt>
 <dd>
-<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientSecret--"><code>clientSecret</code></a> attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html#clientSecret-java.lang.String-">clientSecret(String)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.Builder.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider.Builder</a></dt>
 <dd>
-<div class="block">Initializes the value for the <code>clientSecret</code> attribute.</div>
+<div class="block">Initializes the value for the <a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientSecret--"><code>clientSecret</code></a> attribute.</div>
 </dd>
 <dt><a href="org/cloudfoundry/reactor/client/CloudFoundryExceptionBuilder.html" title="class in org.cloudfoundry.reactor.client"><span class="typeNameLink">CloudFoundryExceptionBuilder</span></a> - Class in <a href="org/cloudfoundry/reactor/client/package-summary.html">org.cloudfoundry.reactor.client</a></dt>
 <dd>&nbsp;</dd>
@@ -343,9 +349,17 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html#get-java.lang.Object-java.lang.Class-java.util.function.Function-java.util.function.Function-">get(Object, Class&lt;T&gt;, Function&lt;UriComponentsBuilder, UriComponentsBuilder&gt;, Function&lt;HttpClientRequest, HttpClientRequest&gt;)</a></span> - Method in class org.cloudfoundry.reactor.uaa.<a href="org/cloudfoundry/reactor/uaa/AbstractUaaOperations.html" title="class in org.cloudfoundry.reactor.uaa">AbstractUaaOperations</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getAccessTokenUri-org.springframework.web.util.UriComponentsBuilder-">getAccessTokenUri(UriComponentsBuilder)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">AbstractUaaTokenProvider</a></dt>
+<dd>
+<div class="block">Return a <code>UriComponentsBuilder</code> that contains the configured access token uri</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/DefaultConnectionContext.html#getApiHost--">getApiHost()</a></span> - Method in class org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/DefaultConnectionContext.html" title="class in org.cloudfoundry.reactor">DefaultConnectionContext</a></dt>
 <dd>
 <div class="block">The hostname of the API root.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientId--">getClientId()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">AbstractUaaTokenProvider</a></dt>
+<dd>
+<div class="block">The client id.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.html#getClientId--">getClientId()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">ClientCredentialsGrantTokenProvider</a></dt>
 <dd>
@@ -354,6 +368,10 @@
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.html#getClientId--">getClientId()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/PasswordGrantTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">PasswordGrantTokenProvider</a></dt>
 <dd>
 <div class="block">The client id.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getClientSecret--">getClientSecret()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">AbstractUaaTokenProvider</a></dt>
+<dd>
+<div class="block">The client secret Defaults to <code>""</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.html#getClientSecret--">getClientSecret()</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/ClientCredentialsGrantTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">ClientCredentialsGrantTokenProvider</a></dt>
 <dd>
@@ -457,6 +475,8 @@
 <dd>
 <div class="block">The timeout for the SSL handshake negotiation</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html#getToken-org.cloudfoundry.reactor.ConnectionContext-">getToken(ConnectionContext)</a></span> - Method in class org.cloudfoundry.reactor.tokenprovider.<a href="org/cloudfoundry/reactor/tokenprovider/AbstractUaaTokenProvider.html" title="class in org.cloudfoundry.reactor.tokenprovider">AbstractUaaTokenProvider</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/cloudfoundry/reactor/TokenProvider.html#getToken-org.cloudfoundry.reactor.ConnectionContext-">getToken(ConnectionContext)</a></span> - Method in interface org.cloudfoundry.reactor.<a href="org/cloudfoundry/reactor/TokenProvider.html" title="interface in org.cloudfoundry.reactor">TokenProvider</a></dt>
 <dd>
 <div class="block">Provides an OAuth token to be used by requests</div>
